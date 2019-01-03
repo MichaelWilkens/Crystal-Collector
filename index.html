@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/crystal2.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <div id='wrapper'>
+        <header>
+            <h1 id='header'>Crystal Collector</h1>
+            <div class='instructions'>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game restart, each crystal value also restarts.</p>
+            </div>
+        </header>
+
+        <div id='main-content'>
+            
+            <div class='game'>
+                <div class='numbers'>
+                    <p><strong>Number to guess</strong></p>
+                    <p id='activeNumber'></p>
+                </div>
+
+                <div class='numbers'>
+                    <p><strong>Your total</strong></p>
+                    <p id='yourTotal'></p>
+                </div>
+            </div>
+
+            <div id='images'>
+                <button><img id='img1' class = 'jewel' src='assets/images/crystal1.jpg'></button>
+                <button><img id='img2' class = 'jewel' src='assets/images/crystal3.jpg'></button>
+                <button><img id='img3' class = 'jewel' src='assets/images/crystal4.jpg'></button>
+                <button><img id='img4' class = 'jewel' src='assets/images/crystal5.jpg'></button>
+            </div>
+
+            <div class='score'>
+                <div id='windiv'>
+                    <p><strong>Wins</strong></p>
+                    <p id='wins'></p>
+                </div>
+
+                <div id='lossdiv'>
+                    <p><strong>Losses</strong></p>
+                    <p id='losses'></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../../jQuery.js"></script>
+    <script src='javascript/app.js'></script>
+</body>
+</html>
